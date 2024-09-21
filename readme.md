@@ -102,7 +102,5 @@ Make sure to write unit tests for every feature—it’s a lifesaver!
 ⚙️ **Tools**: VSCode, Go testing framework, Git  
 📦 **Packages**: `strconv`, `strings`
 
----
-![Go Logo]([https://golang.org/lib/godoc/images/go-logo-blue.svg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fopenupthecloud.com%2Fcloud-engineers-code%2Fgolang%2F&psig=AOvVaw0NS5GCrMyDHOmsTICXUQ-x&ust=1726964944983000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjE2PLj0ogDFQAAAAAdAAAAABAE))
 
 
