@@ -103,5 +103,6 @@ Make sure to write unit tests for every feature—it’s a lifesaver!
 📦 **Packages**: `strconv`, `strings`
 
 ---
-![Go Logo](https://golang.org/doc/gopher/appengine/gopher.png)
+![Go Logo](https://golang.org/lib/godoc/images/go-logo-blue.svg)
+
 
