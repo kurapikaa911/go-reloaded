@@ -1,0 +1,78 @@
+
+func correctSingleQuotesSpacing(Data string) []string {
+	Words := []string{}
+	firstindex := 0
+	lastindex := 0
+	inQuote := false
+	counter := 0
+
+	for i, char := range Data {
+		if char == '\'' {
+			if i > 0 && i < len(Data)-1 && unicode.IsLetter(rune(Data[i-1])) && unicode.IsLetter(rune(Data[i+1])) {
+				continue
+			}
+
+			if inQuote {
+				inQuote = false
+				lastindex = i + 1
+				Words = append(Words, Data[firstindex:lastindex])
+				counter++
+			} else {
+				inQuote = true
+				firstindex = i
+				if lastindex < firstindex {
+					Words = append(Words, Data[lastindex:firstindex])
+				}
+			}
+		}
+	}
+
+	if inQuote {
+		Words = append(Words, Data[firstindex:])
+	} else if len(Data) > lastindex {
+		Words = append(Words, Data[lastindex:])
+	}
+
+	return Words
+}
+
+func RemoveSpace(str string) string {
+	return strings.TrimSpace(str)
+}
+
+func Split_Single_Cote(Data string) []string {
+	Words := []string{}
+	firstindex := 0
+	lastindex := 0
+	inQuote := false
+	counter := 0
+
+	for i, char := range Data {
+		if char == '\'' {
+			if i > 0 && i < len(Data)-1 && unicode.IsLetter(rune(Data[i-1])) && unicode.IsLetter(rune(Data[i+1])) {
+				continue
+			}
+
+			if inQuote {
+				inQuote = false
+				lastindex = i + 1
+				Words = append(Words, Data[firstindex:lastindex])
+				counter++
+			} else {
+				inQuote = true
+				firstindex = i
+				if lastindex < firstindex {
+					Words = append(Words, Data[lastindex:firstindex])
+				}
+			}
+		}
+	}
+
+	if inQuote {
+		Words = append(Words, Data[firstindex:])
+	} else if len(Data) > lastindex {
+		Words = append(Words, Data[lastindex:])
+	}
+
+	return Words
+}
